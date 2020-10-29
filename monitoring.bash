@@ -8,7 +8,7 @@ do
 	else
 		echo "Starting the service"
 		systemctl restart nginx
-		echo "Restart has happened at $(date)" >> logs.txt
+		echo "Restart has happened at $(date)" >> /home/ubuntu/logs.txt
 	fi
 	sleep 5
 done
