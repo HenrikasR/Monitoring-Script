@@ -1,8 +1,7 @@
 #!/bin/bash
 FILE=/home/ubuntu/.hidden-file
 if [ -f "$FILE" ]; then
-sudo echo "Unexpected restart happened at: $(cat -n 1 /home/ubuntu/.hidden-file)" >> /home/ubuntu/unexpected-restart.txt
-rm -f $FILE
+sudo echo "Unexpected restart happened at: $(cat /home/ubuntu/.hidden-file)" >> /home/ubuntu/unexpected-restart.txt
 fi
 
 while [ true ]
